@@ -1,23 +1,165 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+
 <meta charset="UTF-8">
-<title>QR Elçi</title>
+<title>QR Elçileri Platformu</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+body{
+font-family:Arial;
+margin:0;
+background:linear-gradient(135deg,#5f2cff,#2ec5ff);
+color:white;
+text-align:center;
+}
+
+header{
+padding:60px 20px;
+}
+
+h1{
+font-size:40px;
+}
+
+p{
+font-size:18px;
+}
+
+button{
+padding:15px 25px;
+font-size:18px;
+border:none;
+border-radius:8px;
+margin:10px;
+cursor:pointer;
+}
+
+.create{
+background:white;
+color:#333;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
+padding:40px;
+}
+
+.card{
+background:white;
+color:#333;
+padding:30px;
+border-radius:12px;
+box-shadow:0 5px 20px rgba(0,0,0,0.2);
+}
+
+.card i{
+font-size:40px;
+margin-bottom:10px;
+color:#5f2cff;
+}
+
+.section{
+background:white;
+color:#333;
+padding:50px 20px;
+}
+
+footer{
+padding:30px;
+}
+
+</style>
+
 </head>
 
-<body style="text-align:center;font-family:Arial;margin-top:100px;">
+<body>
 
-<h1>QR Elçi Platformu</h1>
+<header>
 
-<p>QR oluştur ve analiz et</p>
+<h1>QR ELÇİLERİ</h1>
 
-<button onclick="location.href='create.html'">
+<p>Web Sitesi ve Belge QR Platformu</p>
+
+<p>
+Website QR • Metin QR • Belge QR • Analitik
+</p>
+
+<button class="create"
+onclick="location.href='olustur.html'">
 QR Oluştur
 </button>
 
-<button onclick="location.href='panel.html'">
-Panel
-</button>
+</header>
+
+
+<div class="cards">
+
+<div class="card">
+<i class="fa-solid fa-globe"></i>
+<h3>Website QR</h3>
+<p>Web siteniz için QR oluşturun</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-file"></i>
+<h3>Belge QR</h3>
+<p>PDF belgeleri QR ile paylaşın</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-chart-line"></i>
+<h3>QR Analitik</h3>
+<p>QR tarama istatistiklerini görün</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-bullhorn"></i>
+<h3>Reklam Sistemi</h3>
+<p>QR reklamları ile kazanç sağlayın</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-gear"></i>
+<h3>Yönetim Paneli</h3>
+<p>QR yönetimi ve kontrol</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-link"></i>
+<h3>Dinamik QR</h3>
+<p>QR içeriğini sonradan değiştirin</p>
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>QR Kod Kullanmanın Avantajları</h2>
+
+<p>QR kod ile web sitelerine ve belgelere hızlı erişim sağlayabilirsiniz.</p>
+
+<p>QR Elçileri platformu ile QR analizlerini takip edebilir ve reklam gelirleri elde edebilirsiniz.</p>
+
+<p>Temassız bilgi paylaşımı ile modern bir dijital deneyim sunabilirsiniz.</p>
+
+</div>
+
+
+<footer>
+
+QR Elçileri Platformu
+
+</footer>
 
 </body>
-</html>
+
+  </html>
