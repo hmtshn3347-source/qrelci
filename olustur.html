@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<title>QR Oluştur</title>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+</head>
+
+<body style="text-align:center;font-family:Arial;margin-top:50px;">
+
+<h2>QR Elçi QR Oluştur</h2>
+
+<select id="tip">
+<option value="url">Website QR</option>
+<option value="text">Metin QR</option>
+</select>
+
+<br><br>
+
+<input id="veri" placeholder="site veya metin yaz">
+
+<br><br>
+
+<button onclick="qrOlustur()">QR Oluştur</button>
+
+<br><br>
+
+<div id="qrcode"></div>
+
+<script>
+
+function qrOlustur(){
+
+document.getElementById("qrcode").innerHTML="";
+
+var veri=document.getElementById("veri").value;
+var tip=document.getElementById("tip").value;
+
+if(tip=="url"){
+if(!veri.startsWith("http")){
+veri="https://"+veri;
+}
+}
+
+new QRCode(document.getElementById("qrcode"), {
+text: veri,
+width: 200,
+height: 200
+});
+
+}
+
+</script>
+
+</body>
+</html>
